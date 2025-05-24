@@ -20,5 +20,4 @@ export default async function fetchMovies(value: string): Promise<Movie[]> {
       }
   )
     .then((response) => response.data.results)
-    .catch((error) => error);
 }
