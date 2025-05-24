@@ -6,8 +6,7 @@ interface MovieGridProps {
     movies: Movie[];
 }
 
-export default function MovieGrid({ onSelect, movies }: MovieGridProps) {
-    
+export default function MovieGrid({ onSelect, movies }: MovieGridProps) {    
     return (
     <ul className={css.grid}>
         {movies.map(movie =>            
@@ -24,13 +23,5 @@ export default function MovieGrid({ onSelect, movies }: MovieGridProps) {
             </li>
         )}
     </ul>
-
     )
 }
-
-
-// Компонент MovieGrid – це список карток фільмів. Він приймає два пропси:
-// onSelect – функцію для обробки кліку на картку фільму;
-// movies – масив фільмів.
-// Компонент MovieGrid має створювати DOM-елемент наступної структури:
-// Галерея повинна рендеритися лише тоді, коли є які-небудь завантажені фільми.
