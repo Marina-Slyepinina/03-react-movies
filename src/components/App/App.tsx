@@ -11,9 +11,9 @@ import MovieModal from "../MovieModal/MovieModal";
 
 
 export default function App() {
-  const [movies, setMovies] = useState<Movie[] | []>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const [movies, setMovies] = useState<Movie[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [hasError, setHasError] = useState<boolean>(false);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const handleSearch = async (data: string) => {
